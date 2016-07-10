@@ -70,8 +70,8 @@ extern "C" {
  * Method:    hello
  * Signature: ()Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_primalpond_com_sensibleopencv_MainActivity_hello
-  (JNIEnv *, jobject);
+JNIEXPORT void JNICALL Java_primalpond_com_sensibleopencv_MainActivity_putText
+  (JNIEnv *, jobject, jlong);
 
 #ifdef __cplusplus
 }
