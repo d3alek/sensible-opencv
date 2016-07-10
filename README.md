@@ -3,7 +3,7 @@ Android Studio project demonstrating OpenCV Java and C++ harmony
 
 Tested with Android studio 2.1.2 and OpenCV 3.1.0
 
-Out of the box (with small modification, see How to compile below), you get:
+Out of the box you get:
 - Live preview from the Android device's camera orchestrated using Android activity callbacks and Java
 - Text stamped on the image from native code using Android NDK and OpenCV C++.
 
@@ -14,20 +14,7 @@ Without this, the OpenCV viewer will always orient the images horizontally.
 
 ## How to compile
 
-Clone this project and open it in Android Studio.
-
-Grab [OpenCV Android SDK 3.1.0](https://sourceforge.net/projects/opencvlibrary/files/opencv-android/3.1.0/OpenCV-3.1.0-android-sdk.zip/download).
-
-Unzip and put in a safe place, then point the OPENCVROOT variable to that place:
-
-src/main/jni/Android.mk
-```
-...
-OPENCVROOT:= <path to OpenCV sdk>
-...
-```
-
-Compile, run and enjoy the working Android, OpenCV Java and OpenCV C++ integration.
+Clone this project and open it in Android Studio. Compile, run and enjoy the working Android, OpenCV Java and OpenCV C++ integration.
 
 ## How to use
 
@@ -44,3 +31,7 @@ For passing Mat objects around I use native addresses. See how MainActivity call
 ## Motivation
 
 I call it 'sensible' because I expected all these features from the OpenCV Android SDK. This project puts you on a solid ground to develop your Android vision ideas. Hope to save you the long hours I spent on getting the integration working. 
+
+## Update to newer OpenCV SDK
+
+Updating should be as simple as replacing the 3.1.0 specific files (the module and the native files) with the newer version.
