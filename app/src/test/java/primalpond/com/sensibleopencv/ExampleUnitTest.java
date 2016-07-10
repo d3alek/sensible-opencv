@@ -1,4 +1,4 @@
-package primalpond.com.structurefrommotion;
+package primalpond.com.sensibleopencv;
 
 import org.junit.Test;
 

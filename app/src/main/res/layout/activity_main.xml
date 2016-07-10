@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="primalpond.com.structurefrommotion.MainActivity">
+    tools:context="primalpond.com.sensibleopencv.MainActivity">
 
     <TextView
         android:id="@+id/hello"
