@@ -3,7 +3,7 @@ Android Studio project demonstrating OpenCV Java and C++ harmony
 
 Tested with Android studio 2.1.2 and OpenCV 3.1.0
 
-Out of the box (with small modification, see How to compile below)), you get:
+Out of the box (with small modification, see How to compile below), you get:
 - Live preview from the Android device's camera orchestrated using Android activity callbacks and Java
 - Text stamped on the image from native code using Android NDK and OpenCV C++.
 
