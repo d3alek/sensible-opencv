@@ -40,3 +40,7 @@ on the java file which will generate a nice header file in the jni directory ([h
 - OR determine the C++ method name by yourself by combining the package, activity and method name
 
 For passing Mat objects around I use native addresses. See how MainActivity calls putText and how putText.cpp manipulates the Mat.
+
+## Motivation
+
+I call it 'sensible' because I expected all these features from the OpenCV Android SDK. This project puts you on a solid ground to develop your Android vision ideas. Hope to save you the long hours I spent on getting the integration working. 
