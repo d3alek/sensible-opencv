@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "24.0.0"
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
-        applicationId "primalpond.com.structurefrommotion"
+        applicationId "primalpond.com.sensibleopencv"
         minSdkVersion 19
-        targetSdkVersion 23
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
 
@@ -16,22 +16,13 @@ android {
         }
     }
 
-    // NDK BUILD +
     sourceSets.main.jni.srcDirs = []
 
-    task ndkBuild(type: Exec, description: 'Compile JNI source via NDK') {
-        def ndkDir = android.ndkDirectory
-        commandLine "$ndkDir/ndk-build",
-                'NDK_PROJECT_PATH=build/intermediates/ndk',
-                'NDK_LIBS_OUT=src/main/jniLibs',
-                'APP_BUILD_SCRIPT=src/main/jni/Android.mk',
-                'NDK_APPLICATION_MK=src/main/jni/Application.mk'
+    externalNativeBuild {
+        ndkBuild {
+            path "src/main/jni/Android.mk"
+        }
     }
-
-    tasks.withType(JavaCompile) {
-        compileTask -> compileTask.dependsOn ndkBuild
-    }
-    // NDK BUILD -
 
     buildTypes {
         release {
@@ -44,6 +35,6 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:appcompat-v7:24.2.1'
     compile project(':openCVLibrary310')
 }
