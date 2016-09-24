@@ -79,3 +79,4 @@ captures/
 *.dSYM/
 *.su
 
+app/.externalNativeBuild
