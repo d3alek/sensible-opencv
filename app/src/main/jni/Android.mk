@@ -8,7 +8,7 @@ OPENCV_LIB_TYPE:=SHARED
 
 LOCAL_LDLIBS += -llog -landroid
 
-OPENCVMAKE:= ${LOCAL_PATH}/../../../../OpenCV-3.1.0-android-sdk/sdk/native/jni/OpenCV.mk
+OPENCVMAKE:= ${LOCAL_PATH}/../../../../OpenCV-3.3.1-android-sdk/sdk/native/jni/OpenCV.mk
 include ${OPENCVMAKE}
 
 FILE_LIST := $(wildcard $(LOCAL_PATH)/*.cpp)

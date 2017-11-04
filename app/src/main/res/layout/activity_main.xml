@@ -4,7 +4,7 @@
     xmlns:opencv="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="primalpond.com.sensibleopencv.MainActivity">
+    tools:context="eu.otselo.sensibleopencv.MainActivity">
 
     <org.opencv.android.JavaCameraView
         android:layout_width="fill_parent"
@@ -14,7 +14,7 @@
         opencv:show_fps="true"
         opencv:camera_id="any" />
 
-    <primalpond.com.sensibleopencv.PortraitCameraView
+    <eu.otselo.sensibleopencv.PortraitCameraView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:visibility="gone"

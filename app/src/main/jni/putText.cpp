@@ -1,14 +1,14 @@
 #include "jni.h"
-#include "primalpond_com_sensibleopencv_MainActivity.h"
+#include "eu_otselo_sensibleopencv_MainActivity.h"
 #include <opencv2/core/core.hpp>
 #include <opencv2/imgproc.hpp>
 
 using namespace cv;
 
-JNIEXPORT void JNICALL Java_primalpond_com_sensibleopencv_MainActivity_putText
+JNIEXPORT void JNICALL Java_eu_otselo_sensibleopencv_MainActivity_putText
   (JNIEnv * env, jobject obj, jlong imageAddr) {
     Mat* image = (Mat*) imageAddr;
-    Point position = Point(100,100);
+    Point position = Point(10,100); // 10px horizontally right, 100px vertically down
     Point newLine = Point(0, 50);
     Scalar color = Scalar(255,255,255);
 
