@@ -48,3 +48,4 @@ Updating OpenCV Android SDK involves:
 - now change local.properties and Android.mk to point to the new version
 - delete the old version folders (the *-sdk folder, and the library module)
 - you can delete everything but sensible-opencv/NEWER-OPENCV-SDK/sdk/native which we reference in Android.mk
+- you can delete sensible-opencv/NEWER-OPENCV-SDK/sdk/native/libs/x86* because they are big and not meant for most Android devices (that don't run on x86)
