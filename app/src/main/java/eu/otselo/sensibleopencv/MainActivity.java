@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements CameraBridgeViewB
 
     static {
         System.loadLibrary("opencv_java3");
-        System.loadLibrary("sensible");
+        System.loadLibrary("putText");
     }
 
     public native void putText(long imageAddress);
